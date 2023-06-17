@@ -8,9 +8,9 @@
 </head>
 <body>
  <div class="quotes">
-    <h1>Muilti-quotes Around The world!</h1>
+    <h1 id="hone">Muilti-quotes Around The world!</h1>
     <h2 id="heading"><q>Death is the gateway to life-abundance; 
-        never be afraid to dare therefore!<p>___Raymond Ogaraga</p></q></h2>
+        never be afraid to dare therefore!___Raymond Ogaraga</q></h2>
     <button type="button" id="btn">New Quote</button>
  </div>
 
@@ -37,7 +37,7 @@ const quotes =[
  "Life is a function of the the principle of birdism____Never-Quit-Yet by Raymond Ogaraga",
  "Death is the gateway to life-abundance; never be afraid to dare therefore!_____Raymond Ogaraga",
  "I'm happy today not because i'm; i wanted you happy so i can be happy__Raymond Ogaraga",
- "The only pavement to coridor of splendour is to gratefully accept life-bullets__Raymond Ogaraga",
+ "The only pavement to the corridor of splendour is to gratefully accept life-bullets__Raymond Ogaraga",
  "If you are without sin, be the first to cast a stone on her__Jesus Christ",
  "Vision is not really a vision unless it is measurable and computably timed__Raymond Ogaraga",
  "I am not afraid of storms, for I am learning how to sail my ship. ___Louisa May Alcott",
@@ -56,7 +56,7 @@ const quotes =[
  "My Best Friend is a person who will give me a book I have not read.__Abraham Lincoln",
  "When I do good, I feel good. When I do bad, I feel bad. That's my religion.__Abraham Lincoln",
 ];
-
+const hOne = document.getElementById("hone")
 const heading = document.getElementById("heading")
 const myButton = document.getElementById("btn");
 myButton.addEventListener("click", (e)=>{
@@ -64,6 +64,8 @@ e.preventDefault();
 const randomNum = Math.floor(Math.random() * quotes.length);
 const myquotes = quotes[randomNum];
 heading.textContent = myquotes;
+heading.style.color = "magenta";
+{(heading.style.color = "magenta")? hOne.style.color = "blue": hOne.style.color = "black"};
 
 
 })
