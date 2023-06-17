@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MULTI-QUOTES</title>
+</head>
+<body>
+ <div class="quotes">
+    <h1>Muilti-quotes Around The world!</h1>
+    <h2 id="heading"><q>Death is the gateway to life-abundance; 
+        never be afraid to dare therefore!<p>___Raymond Ogaraga</p></q></h2>
+    <button type="button" id="btn">New Quote</button>
+ </div>
+
+ 
+
+    <SCript>
+const quotes =[
+ "All we have to decide is what to do with the time that is given to us.____The Fellowship of the Ring by J.R.R Tolkien",
+ "In spite of everything I still believe that people are really good at heart.____The Diary of a Young Girl by Anne Frank",
+ "What’s the point of having a voice if you’re gonna be silent in those moments you shouldn’t be?___ The Hate U Give” by Angie Thomas",
+ "Nothing in the world is ever completely wrong. Even a stopped clock is right twice a day.___The Alchemist” by Paulo Coelho",
+ "Just think happy thoughts and you’ll fly.____Peter Pan by J.M. Barrie",
+ "Genius is one percent inspiration, ninety-nine percent perspiration.___Thomas Edison",
+ "There's a better way to do - Find it.___Thomas Edison",
+ "Many of life's failures are people who did not realize how close they were to success when they gave up.___Thomas Edison",
+ "We often miss opportunity because it's dressed in overalls and looks like work.___Thomas Edison",
+ "The three great essentials to achieve anything worthwhile are, first, hard work; second, stick-to-itiveness; third, common sense.___Thomas Edison",
+ "If we all did the things we are really capable of doing, we would literally astound ourselves.___Thomas Edison",
+ "What you believe, you behave and what you behave, you become____Never-Quit-Yet by Raymond Ogaraga",
+ "You become what you write ___Raymond Ogaraga",
+ "The big man in a small village is the big ship in a small lake! Let him sail to the vast oceans!__Mehmet Murat ildan",
+ "There is no peace for great men__Pierce Brown, Golden Son",
+ "Folks are usually about as happy as they make their minds up to be.__Abraham Lincoln",
+ "Life is a function of the the principle of birdism____Never-Quit-Yet by Raymond Ogaraga",
+ "Death is the gateway to life-abundance; never be afraid to dare therefore!_____Raymond Ogaraga",
+ "I'm happy today not because i'm; i wanted you happy so i can be happy__Raymond Ogaraga",
+ "The only pavement to coridor of splendour is to gratefully accept life-bullets__Raymond Ogaraga",
+ "If you are without sin, be the first to cast a stone on her__Jesus Christ",
+ "Vision is not really a vision unless it is measurable and computably timed__Raymond Ogaraga",
+ "I am not afraid of storms, for I am learning how to sail my ship. ___Louisa May Alcott",
+ "To choose doubt as a philosophy of life is akin to choosing immobility as a means of transportation. ____The Life of Pi by Yann Martel",
+ "Tomorrow is always fresh, with no mistakes in yet.____Anne of Green Gables by Lucy Maud Montgomery",
+ "It’s the possibility of having a dream come true that makes life interesting.____The Alchemist by Paulo Coelho",
+ "Most of us can’t help but live as though we’ve got two lives to live, one is the mockup, the other the finished version, and then there are all those versions in between.____Call Me By Your Name by André Aciman",
+ "I am a slow walker, but I never walk back.__Abraham Lincoln",
+ "I have not failed. I've just found 10,000 ways that won't work.___Thomas Edison",
+ "There are no rules here -- we're trying to accomplish something.___Thomas Edison", 
+ "Only when there are things a man will not do is he capable of doing great things.__Mencius",
+ "What? A great man? I only ever see the ape of his own ideal.__Nietzsche, Friedrich",
+ "A great chessplayer is not a great man, for he leaves the world as he found it.__William Hazlitt, Table-Talk, Essays on Men and Manners",
+ "...You are a little boy. You want the moon to drink from as a golden cup; and so, it is very likely that you will become a great man -- if only you remain a little child. All the world'sgreat have been little boys who wanted the moon; running and climbing, they sometimes catch a firefly. But if one grow to a man's mind, that mind must see that it cannot have the moon and would not want it if it could -- and so, it catches no fireflies. [Merlin]__John Steinbeck, Cup of Gold",
+ "Whatever you are, be a good one.__Abraham Lincoln",
+ "My Best Friend is a person who will give me a book I have not read.__Abraham Lincoln",
+ "When I do good, I feel good. When I do bad, I feel bad. That's my religion.__Abraham Lincoln",
+];
+
+const heading = document.getElementById("heading")
+const myButton = document.getElementById("btn");
+myButton.addEventListener("click", (e)=>{
+e.preventDefault();
+const randomNum = Math.floor(Math.random() * quotes.length);
+const myquotes = quotes[randomNum];
+heading.textContent = myquotes;
+
+
+})
+    </SCript>
+</body>
+</html>
